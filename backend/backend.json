@@ -1,0 +1,138 @@
+{
+    "intents": [
+        {
+            "intent_name": "start",
+            "keywords": ["hello", "hi", "hey","hie","hallo","restart"],
+            "answers": [
+                "All good , Want to book your ticket yes or No "
+            ]
+        },
+       
+        {
+            
+            "intent_name": "book",
+            "keywords": ["movie-ticket","Book ticket","book","yes"],
+            "answers": ["Write Movie name you want to watch ?.\n "],
+            "next_expectation": ""
+        },
+        {
+            "intent_name": "date",
+            "keywords": ["schedule date","Book date","date","day"],
+            "answers": ["Enter Date to book in YYYY-MM-DD\n "],
+            "next_expectation": ""
+        },
+        {
+            "intent_name": "time",
+            "keywords": ["time","show time","movie time","tim"],
+            "answers": ["Enter show time which you preffered in 24hr format Example(13:00) "],
+            "next_expectation": ""
+        },
+        {
+            "intent_name": "seats",
+            "keywords": ["prices","seat price","charges","ticket price","price","general","premium","recliner"],
+            "answers": ["PRICE CHART GENERAL SEAT : 1 € PREMIUM SEAT : 2.5 € RECLINER SEAT :4.0 €   type which seat you want. "],
+            "next_expectation": ""
+        },
+        
+        
+        {
+            
+            "intent_name": "movie-language",
+            "keywords": ["language","movie language","english","hindi","deutsch"],
+            "answers": ["enter Movie language : We have three Option(English , Hindi ,Deutsch"],
+            "next_expectation":""
+        },
+        {
+            
+            "intent_name": "movie_type",
+            "keywords": ["movie type","3D","2D","3d","2d","animation"],
+            "answers": ["One more Thing you want to watch movie in 3D or 2D ?"],
+            "next_expectation":""
+        },
+        {
+            
+            "intent_name": "seat-number",
+            "keywords": ["number","seat number","seat-number"],
+            "answers": ["Enter seat number you want between :"],
+            "next_expectation":""
+        },
+        {
+            
+            "intent_name": "total-adults",
+            "keywords": ["number of adults","adults","persons"],
+            "answers": ["Enter total number of Adults to book ticket :"],
+            "next_expectation":""
+        },
+        {
+            
+            "intent_name": "total-children",
+            "keywords": ["number of childeren","child","kids","childeren"],
+            "answers": ["Enter number of childeren to book ticket for them: :"],
+            "next_expectation":""
+        },
+        {
+            "intent_name": "food-services",
+            "keywords": ["food","services","assistant","fries","burger","popcorn"],
+            "answers": ["Name combo to add food in your ticket ? Here's the Menu => (fries, Burger ,popcorn)"],
+            "next_expectation":""
+
+        },
+        {
+            "intent_name": "parking-service",
+            "keywords": ["parking","car","park"],
+            "answers": [" free Parking  Aailable Write Add Parking to make it reserve for you:) "],
+            "next_expectation":""
+
+        },
+        {
+            "intent_name": "mobile-number",
+            "keywords": ["mobile number","contact-detail","mob","num"],
+            "answers": ["Enter ypur Mobile-Number to verify you :)"],
+            "next_expectation":""
+
+        },
+        {
+            "intent_name": "eamil-id",
+            "keywords": ["id","email","gmail","mail"],
+            "answers": ["Enter  email id to get Pdf of Ticket :)"],
+            "next_expectation":""
+
+        },
+        {
+            "intent_name": "payment-option",
+            "keywords": ["pay","payment","money","card","online","cash"],
+            "answers": ["select payment option : Online payment or Cash"],
+            "next_expectation":""
+
+        },
+        {
+            "intent_name": "ticket",
+            "keywords": ["ticket","print","tick","details"],
+            "answers": ["Here is Your Ticket : Check it out + Enjoy Your Movie :)"],
+            "next_expectation":""
+
+        },
+        {
+            "intent_name": "edit",
+            "keywords": ["edit","change","change detail","edit detail"],
+            "answers": ["enter whatever you want to edit (such as number of adults , seat , Payment option etc)"],
+            "next_expectation":""
+
+        },
+        {
+            "name": "restart",
+            "keywords": ["restart","reload","re","start"],
+            "answers": []
+        },
+        {
+            
+            "intent_name":"No-booking",
+            "keywords":["No","no booking ","no movie tickets","book No","no"],
+            "answers":["So whatever you want to search about any movie, you can command me Eg: Movie_name Cast, review, language etc"],
+            "next_expectation":""
+        }
+          
+            
+        
+    ]
+}
